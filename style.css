@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+}
+
+body {
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    text-align: justify;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.card-salmon {
+    border: solid 2px salmon;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+.card-salmon .judul-card {
+    border-bottom: solid 1px rgb(190, 88, 76);
+    margin-bottom: 10px;
+    color: rgb(190, 88, 76);
+}
+
+.judul-card h2 {
+        font-size: 1.1rem;
+    }
+
+.card-salmon .konten {
+    color: rgb(39, 12, 9);;
+}
+
+.card-salmon .gambar img{
+    border-radius: 5px;
+    width: 100%;
+    border: solid 1px salmon;
+    max-height: 170px;
+}
+
+.card-biru {
+    border: solid 2px skyblue;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+
+/* tampilan tablet */
+@media(min-width:720px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .judul-card h2 {
+        font-size: 1.2rem;
+    }
+}
+
+/* tampilan laptop */
+@media(min-width:1030px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+        .judul-card h2 {
+        font-size: 1.4rem;
+    }
+    .card-salmon .gambar img {
+        max-height: 200px;
+    }
+}
